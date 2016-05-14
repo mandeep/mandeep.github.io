@@ -3,3 +3,7 @@ body {
     font-size: 2em;
     font-weight: 300;
 }
+
+nav {
+    position: fixed;
+}
