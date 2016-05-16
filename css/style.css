@@ -13,3 +13,7 @@ nav {
     align-items: middle;
     background-color: #004D86;
 }
+
+.container {
+    width: 80%;
+}
