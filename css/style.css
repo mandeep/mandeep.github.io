@@ -5,8 +5,15 @@ body {
 }
 
 nav {
+    z-index: 1000;
     position: fixed;
     height: 100%;
     width: 15%;
     background-color: #004D86;
+
+}
+
+.page-content-wrapper {
+    position: absolute;
+    width: 100%;
 }
