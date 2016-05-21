@@ -13,7 +13,7 @@ body {
     margin-left: -250px;
     left: 250px;
     width: 250px;
-    background: #EAEAEA;
+    background: #F5F8FA;
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -40,7 +40,11 @@ body {
 }
 
 .second {
-    background-color: #D8DFE2
+    background-color: #D8DFE2;
+}
+
+.fourth {
+    background-color: #FFFFFF;
 }
 
 @media (max-width:768px) {
