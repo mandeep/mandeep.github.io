@@ -14,4 +14,19 @@ h1 {
     color: #2C2C2C;
     font-size: 45px;
     font-family: 'Nothing You Could Do', cursive;
-}   
+}
+
+.links {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
