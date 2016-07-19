@@ -3,23 +3,12 @@ html, body {
     font-size: 17px;
     font-weight: 400;
     height: 100%;
-}
-
-.header {
-    text-align: center;
-    margin-top: 0 auto;
-    height: 52vh;
-    background-color: #FF5B46;
+    background-color: #DEDEDE
 }
 
 h1 {
-    margin: 0 0 0 0;
-    color: white;
-    font-size: 80px;
-    font-weight: 500;
-} 
-
-.content {
-    background-color: #DEDEDE;
-    height: 48vh;
-}
+    margin-top: 60px;
+    color: #2C2C2C;
+    font-size: 40px;
+    font-family: 'Nothing You Could Do', cursive;
+}   
