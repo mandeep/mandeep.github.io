@@ -1,17 +1,25 @@
-body {
+html, body {
     font-family: Lato, sans-serif;
     font-size: 17px;
     font-weight: 400;
+    height: 100%;
 }
 
 .header {
     text-align: center;
     margin-top: 0 auto;
-    height: 620px;
-    background-image: url('galaxy3.jpeg');
-
+    height: 52vh;
+    background-color: #FF5B46;
 }
 
 h1 {
     margin: 0 0 0 0;
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
 } 
+
+.content {
+    background-color: #CECECE;
+    height: 48vh;
+}
