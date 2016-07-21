@@ -72,3 +72,20 @@ input[type="submit"] {
         width: 80%;
     }
  }
+
+ .info_div label {
+    display: block;
+ }
+
+.info_div {
+    display: inline-block;
+}
+
+.subject_div label {
+    display: block;
+}
+
+.message_div label {
+    display: block;
+
+}
