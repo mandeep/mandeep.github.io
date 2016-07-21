@@ -38,7 +38,7 @@ li {
 
 input[type="text"] {
     border: none;
-    width: 15%;
+    width: 300px;
     height: 48px;
     margin: 10px;
     padding: 10px;
@@ -46,7 +46,7 @@ input[type="text"] {
 
 input[type="email"] {
     border: none;
-    width: 15%;
+    width: 300px;
     height: 48px;
     margin: 10px;
     padding: 10px;
@@ -56,11 +56,19 @@ textarea {
     border: none;
     padding: 10px;
     margin-top: 10px;
+    resize: none;
 }
 
 input[type="submit"] {
     border: none;
+    width: 100px;
     height: 48px;
     background-color: #43BCFF;
     color: #F5F5F5;
 }
+
+ @media (max-width: 800px) {
+    textarea {
+        width: 80%;
+    }
+ }
