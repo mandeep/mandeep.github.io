@@ -40,6 +40,10 @@ li {
     margin-top: 30px;
 }
 
+.img-responsive {
+    margin: 0 auto;
+}
+
 input[type="text"] {
     border: none;
     width: 300px;
@@ -93,3 +97,4 @@ input[type="submit"] {
     display: block;
 
 }
+
