@@ -21,6 +21,10 @@ h1 {
     font-weight: 400;
 }
 
+.content {
+    margin-top: 60px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
