@@ -111,6 +111,19 @@ input[type="submit"] {
     textarea {
         width: 80%;
     }
+
+    input {
+        width: 80%;
+    }
+
+    .img-responsive {
+        padding: 0px;
+    }
+
+    .image_wrapper {
+        height: auto;
+        width: auto;
+    }
  }
 
  .info_div label {
