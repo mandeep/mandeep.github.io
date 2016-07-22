@@ -90,10 +90,6 @@ input[type="submit"] {
     display: inline-block;
 }
 
-.subject_div label {
-    display: block;
-}
-
 .message_div label {
     display: block;
 
