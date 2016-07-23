@@ -49,7 +49,11 @@ a {
     width: 400px;
 }
 
-.img-responsive {
+.header .img-responsive {
+    display: inline;
+}
+
+.content .img-responsive {
     margin: 0 auto;
     display: inline;
     padding: 50px;
