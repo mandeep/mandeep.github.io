@@ -44,7 +44,7 @@ a {
     text-decoration: none;
 }
 
-img {
+.content img {
     height: 400px;
     width: 400px;
 }
