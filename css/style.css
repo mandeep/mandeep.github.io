@@ -32,6 +32,7 @@ li {
 
 .contact {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 a {
@@ -109,7 +110,7 @@ input[type="submit"] {
     border: none;
     width: 100px;
     height: 48px;
-    background-color: #969696;
+    background-color: #B9B9B9;
     color: #F5F5F5;
 }
 
