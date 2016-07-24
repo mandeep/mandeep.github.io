@@ -124,6 +124,14 @@ input[type="submit"] {
         width: 80%;
     }
 
+    .content {
+        margin-top: 0px;
+    }
+
+    .links {
+        margin-top: 0px;
+    }
+
     .img-responsive {
         padding: 0px;
     }
@@ -153,6 +161,15 @@ input[type="submit"] {
 
     input {
         width: 80%;
+    }
+
+    .content {
+        margin-top: 0px;
+
+    }
+
+    .links {
+        margin-top: 0px;
     }
 
     .img-responsive {
