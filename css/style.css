@@ -10,12 +10,6 @@ body {
     background-color: #F5F5F5;
 }
 
-h1 {
-    color: #2C2C2C;
-    font-size: 45px;
-    font-family: 'Nothing You Could Do', cursive;
-}
-
 .links {
     margin-top: 30px;
     font-weight: 400;
@@ -53,10 +47,18 @@ a {
     display: inline;
 }
 
+.contact .img-responsive {
+    display: inline;
+}
+
 .content .img-responsive {
     margin: 0 auto;
     display: inline;
     padding: 50px;
+}
+
+.contact img {
+    margin-bottom: 40px;
 }
 
 .image_wrapper {
