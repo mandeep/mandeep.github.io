@@ -44,6 +44,11 @@ a {
     width: 400px;
 }
 
+.content #record {
+    height: 325px;
+    width: 488px;
+}
+
 .header .img-responsive {
     display: inline;
 }
@@ -65,8 +70,7 @@ a {
 .image_wrapper {
     position: relative;
     display: inline-block;
-    height: 400px;
-    width: 400px;
+
 }
 
 .image_description {
