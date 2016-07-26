@@ -152,6 +152,11 @@ input[type="submit"] {
         height: 300px;
     }
 
+    .content #record {
+        width: 300px;
+        height: 200px;
+    }
+
     .image_description {
         visibility: visible;
         opacity: 1;
