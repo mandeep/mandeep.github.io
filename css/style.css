@@ -46,7 +46,7 @@ a {
 
 .content #record {
     height: 400px;
-    width: 442px;
+    width: 458px;
 }
 
 .header .img-responsive {
@@ -153,7 +153,7 @@ input[type="submit"] {
     }
 
     .content #record {
-        width: 332px;
+        width: 344px;
         height: 300px;
     }
 
