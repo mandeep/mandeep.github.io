@@ -40,13 +40,13 @@ a {
 }
 
 .content img {
-    height: 400px;
-    width: 400px;
+    height: 375px;
+    width: 375px;
 }
 
 .content #record {
-    height: 400px;
-    width: 453px;
+    height: 375px;
+    width: 425px;
 }
 
 .header .img-responsive {
@@ -60,7 +60,7 @@ a {
 .content .img-responsive {
     margin: 0 auto;
     display: inline;
-    padding: 50px;
+    padding: 40px;
 }
 
 .contact img {
