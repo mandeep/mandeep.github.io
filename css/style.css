@@ -49,6 +49,11 @@ a {
     width: 425px;
 }
 
+.content #padlock {
+    height: 375px;
+    width: 300px;
+}
+
 .header .img-responsive {
     display: inline;
 }
