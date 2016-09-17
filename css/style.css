@@ -39,21 +39,6 @@ a {
     text-decoration: none;
 }
 
-.content img {
-    height: 375px;
-    width: 375px;
-}
-
-.content #record {
-    height: 375px;
-    width: 425px;
-}
-
-.content #padlock {
-    height: 375px;
-    width: 275px;
-}
-
 .header .img-responsive {
     display: inline;
 }
