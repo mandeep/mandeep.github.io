@@ -54,11 +54,11 @@ a:hover {
     font-size: 16px;
     letter-spacing: -8px;
     color: #FFFFFF;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
+    -webkit-animation: 2s blink step-end infinite;
+    -moz-animation: 2s blink step-end infinite;
+    -ms-animation: 2s blink step-end infinite;
+    -o-animation: 2s blink step-end infinite;
+    animation: 2s blink step-end infinite;
 }
 
 @keyframes "blink" {
