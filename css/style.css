@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   height: 100%;
-  background-color: #2F2F2F;
+  background-color: #222d32;
 }
 
 p {
@@ -25,12 +25,12 @@ a {
 }
 
 a:hover {
-  color:#CF727F;
+  color:#3497db;
   cursor:pointer;  
 }
 
 .terminal {
-  background-color: #3C3C3C;
+  background-color: #29353b;
   margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
@@ -42,12 +42,12 @@ a:hover {
 }
 
 .hostname {
-  color: #8BD335;
+  color: #2ecc70;
   font-weight: 700;
 }
 
 .home {
-  color: #729FCF;
+  color: #3497db;
   font-weight: 700;
 }
 
