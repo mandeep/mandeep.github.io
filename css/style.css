@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
+  font-size: 12pt;
   font-weight: 400;
   height: 100%;
   background-color: #222d32;
@@ -15,9 +15,6 @@ p {
   line-height: 50%;
 }
 
-p:hover .project {
-  display: inline;
-}
 
 a {
   text-decoration: none;
@@ -25,13 +22,13 @@ a {
 }
 
 a:hover {
-  color:#3497db;
-  cursor:pointer;  
+    color: #f7bc54;
+    cursor: pointer;
 }
 
 .terminal {
   background-color: #29353b;
-  width: 60%;
+  width: 80%;
   height: 70%;
   position: absolute;
   top: 0;
@@ -53,7 +50,8 @@ a:hover {
 }
 
 .project {
-  display: none;
+  color: #3497db;
+  font-weight: 700;
 }
 
 .cursor {
@@ -118,8 +116,8 @@ a:hover {
     width: 100%;
   }
 
-  p:hover .project {
-    display: none;
+  .ls {
+    display: none
   }
 
   .github {
@@ -132,13 +130,21 @@ a:hover {
     width: 100%;
   }
 
-  p:hover .project {
-    display: none;
+  .ls {
+      display: none
   }
+
 }
 
-@media screen and (min-width: 515px) and (max-width: 1280px) {
-  p:hover .project {
-    display: none;
-  }
+@media screen and (min-width: 515px) and (max-width: 830px) {
+    .ls {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .terminal {
+        width: 50%;
+        height: 80%;
+    }
 }
