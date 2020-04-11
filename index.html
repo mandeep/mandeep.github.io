@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Mandeep Bhutani</title>
 		<style>
-			body { margin: 0; }
+			body { margin: 0; background: #222222; overflow: hidden }
 			canvas { display: block; }
 		</style>
 	</head>
@@ -17,12 +17,12 @@
 			var scene = new THREE.Scene();
 
 			var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 10000);
-			
-			camera.position.z = 20; 
+
+			camera.position.z = 20;
   			camera.position.y = 3;
 
 			var height_map = THREEx.Terrain.allocateHeightMap(256,256);
-			THREEx.Terrain.simplexHeightMap(height_map)	
+			THREEx.Terrain.simplexHeightMap(height_map)
 
 			var geometry = THREEx.Terrain.heightMapToPlaneGeometry(height_map)
 			THREEx.Terrain.heightMapToVertexColor(height_map, geometry)
@@ -30,10 +30,10 @@
 			var material = new THREE.MeshBasicMaterial({wireframe: true});
 
 			var mesh = new THREE.Mesh(geometry, material);
-	
+
 			var ambient_light = new THREE.AmbientLight(0x202020);
 			scene.add(ambient_light);
-			
+
 			scene.fog = new THREE.Fog(0x000000, 0, 45);
 
 			scene.add(mesh);
