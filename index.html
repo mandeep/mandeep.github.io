@@ -1,54 +1,87 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Mandeep Bhutani</title>
-		<style>
-			body { margin: 0; background: #222222; overflow: hidden }
-			canvas { display: block; }
-		</style>
-	</head>
-	<body>
-		<script src='js/three-min.js'></script>
-		<script src='js/SimplexNoise.js'></script>
-		<script src='js/threex.terrain.js'></script>
-
-		<script>
-			var scene = new THREE.Scene();
-
-			var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 10000);
-
-			camera.position.z = 20;
-  			camera.position.y = 3;
-
-			var height_map = THREEx.Terrain.allocateHeightMap(256,256);
-			THREEx.Terrain.simplexHeightMap(height_map)
-
-			var geometry = THREEx.Terrain.heightMapToPlaneGeometry(height_map)
-			THREEx.Terrain.heightMapToVertexColor(height_map, geometry)
-
-			var material = new THREE.MeshBasicMaterial({wireframe: true});
-
-			var mesh = new THREE.Mesh(geometry, material);
-
-			var ambient_light = new THREE.AmbientLight(0x202020);
-			scene.add(ambient_light);
-
-			scene.fog = new THREE.Fog(0x000000, 0, 45);
-
-			scene.add(mesh);
-			mesh.lookAt(new THREE.Vector3(0, 1, 0));
-
-			mesh.scale.y = 50;
-			mesh.scale.x = 30;
-			mesh.scale.z = 4;
-
-                        var renderer = new THREE.WebGLRenderer({ antialias: true });
-			renderer.setSize(window.innerWidth, window.innerHeight);
-
-			document.body.appendChild(renderer.domElement);
-
-			renderer.render(scene, camera);
-		</script>
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
+        <title>Mandeep Bhutani</title>
+    </head>
+    <body>
+        <div class="terminal">
+            <p>
+                <span class="hostname"><a href="mailto:mandeep@keemail.me">mandeep@localhost</a></span><span class="colon">:</span><span class="home">~</span><span class="sign">$</span>
+                ls -lA <span class="github"><a href="https://github.com/mandeep">github/</a></span>
+            </p>
+            <p>
+            <span class="ls">drwxr-xr-x   5 mandeep mandeep  4096 Oct 23 2017 </span>
+            <span class="project"><a href="https://github.com/mandeep/c-algorithms">c_algorithms</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   9 mandeep mandeep  4096 Jun 27 2017 </span>
+                <span class="project"><a href="https://github.com/conda/conda-verify">conda_verify</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   7 mandeep mandeep  4096 Aug 17 2016 </span>
+                <span class="project"><a href="https://github.com/mandeep/Cookiecutter-PyQt5">cookiecutter_pyqt5</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   3 mandeep mandeep  4096 May 17 2018 </span>
+                <span class="project"><a href="https://github.com/mandeep/dotfiles">dotfiles</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   5 mandeep mandeep  4096 Oct 12 2019 </span>
+                <span class="project"><a href="https://github.com/mandeep/fragula">fragula</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   7 mandeep mandeep  4096 Feb 28 2019 </span>
+                <span class="project"><a href="https://github.com/mandeep/kaiten-zushi">kaiten_zushi</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   8 mandeep mandeep  4096 Jan 18 2016 </span>
+                <span class="project"><a href="https://github.com/mandeep/Job-Automate">job_automate</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   6 mandeep mandeep  4096 Jul 01 2016 </span>
+                <span class="project"><a href="https://github.com/mandeep/MandeepPAD">mandeep_pad</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   8 mandeep mandeep  4096 Oct 11 2016 </span>
+                <span class="project"><a href="https://github.com/mandeep/Mausoleum">mausoleum</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   9 mandeep mandeep  4096 Jul 18 2016 </span>
+                <span class="project"><a href="https://github.com/mandeep/Mosaic">mosaic</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   3 mandeep mandeep  4096 Jan 27 2015 </span>
+                <span class="project"><a href="https://github.com/mandeep/project-euler">project_euler</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   5 mandeep mandeep  4096 Apr 21 2018 </span>
+                <span class="project"><a href="https://github.com/mandeep/rastermind">rastermind</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   5 mandeep mandeep  4096 Jun 06 2018 </span>
+                <span class="project"><a href="https://github.com/mandeep/renderama">renderama</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   4 mandeep mandeep  4096 May 17 2017 </span>
+                <span class="project"><a href="https://github.com/mandeep/sublime-text-conda">sublime_text_conda</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   9 mandeep mandeep  4096 Sep 11 2016 </span>
+                <span class="project"><a href="https://github.com/mandeep/Travis-Encrypt">travis_encrypt</a></span>
+            </p>
+            <p>
+                <span class="ls">drwxr-xr-x   5 mandeep mandeep  4096 Dec 25 2019 </span>
+                <span class="project"><a href="https://github.com/mandeep/patina">viewimg</a></span>
+            </p>
+            <p>
+                <span class="hostname"><a href="mailto:mandeep@keemail.me">mandeep@localhost</a></span><span class="colon">:</span><span class="home">~</span><span class="sign">$</span>
+                <span class="cursor">||||</span>
+            </p>
+        </div>
+    </body>
 </html>
