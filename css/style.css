@@ -24,12 +24,13 @@ a:link, a:visited, a:hover, a:active {
 .column {
   flex: 20%;
   max-width: 20%;
-  padding: 0 4px;
+  padding: 0px 16px 0px 16px;
 }
 
 .title {
   text-align: center;
   vertical-align: middle;
+  padding: 16px;
 }
 
 
