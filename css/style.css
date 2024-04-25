@@ -24,7 +24,7 @@ a:link, a:visited, a:hover, a:active {
 .column {
   flex: 20%;
   max-width: 20%;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 64px 0px 64px;
 }
 
 .title {
