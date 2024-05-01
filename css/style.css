@@ -22,9 +22,9 @@ a:link, a:visited, a:hover, a:active {
 
 /* Create five equal columns that sits next to each other */
 .column {
-  flex: 16%;
-  max-width: 16%;
-  padding: 0px 64px 0px 64px;
+  flex: 20%;
+  max-width: 20%;
+  padding: 0px 32px 0px 32px;
 }
 
 .title {
