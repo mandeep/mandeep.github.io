@@ -49,7 +49,7 @@ html, body {
 }
 
 .carousel-container {
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding-top: 25px;
   position: relative;
@@ -122,11 +122,11 @@ html, body {
   }
 
   .prev {
-    left: -5%;
+    left: -3%;
   }
 
   .next {
-    right: -5%;
+    right: -3%;
   }
 
   .dots {
@@ -137,6 +137,7 @@ html, body {
     padding-top: 5px;
 
     .dot {
+      border-radius: 50%;
       cursor: pointer;
       height: 10px;
       width: 10px;
@@ -182,12 +183,12 @@ html, body {
 
 
 /* Responsive layout - makes a two column-layout instead of four columns
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
-} */
+}
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
