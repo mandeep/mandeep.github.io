@@ -40,6 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       showItem((index + 1) % items.length);
     });
+
+    // auto play the slideshow
+    const autoplay = setInterval(() => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index + 1) % items.length);
+    }, 5000);
+
+    carousel.addEventListener("mouseenter", () => clearInterval(autoplay));
+
   
     // Event listeners for dots
     dots.forEach((dot) => {
