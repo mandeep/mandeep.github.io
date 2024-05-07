@@ -2,13 +2,19 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
 
+.title_container {
+  width: 65%;
+  /* text-align: center; */
+  position: relative;
+  margin: auto;
 }
 
 .titlebar {
   background: #222831;
   margin: 0;
-  padding-left: 2em;
+  padding-left: 0;
   padding-bottom: 0.5em;
 }
 
@@ -38,7 +44,7 @@ html, body {
   font-size: calc(12px + 0.5vw);
   font-weight: 200;;
   text-align: center;
-  padding-right: 2em;
+  padding-right: 0;
 }
 
 .links_menu a:link, a:visited, a:active {
@@ -50,8 +56,9 @@ html, body {
   color: #00adb5;
 }
 
+
 .carousel-container {
-  width: 60%;
+  width: 65%;
   margin: auto;
   padding-top: 25px;
   position: relative;
@@ -188,11 +195,19 @@ html, body {
   .carousel-container {
     width: 80%;
   }
+
+  .title_container {
+    width: 80%;
+  }
 }
 
 
 @media screen and (max-width: 600px) {
   .carousel-container {
+    width: 90%;
+  }
+
+  .title_container {
     width: 90%;
   }
 }
