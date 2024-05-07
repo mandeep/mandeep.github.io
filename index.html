@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Mandeep Bhutani</title>
     </head>
     <body>
-        <div class="row">
-            <div class="column">
-                <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby">
-                <img src="images/notsochill.png" alt="notsochillobby">
-                <div class="title">chill but not too chill obby</div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://github.com/mandeep/fragula/"><img src="images/fragula.png" alt="fragula">
-                <div class="title">fragula</div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://github.com/mandeep/viewimg/"><img src="images/viewimg.png" alt="viewimg">
-                <div class="title">viewimg</div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://github.com/mandeep/renderama/"><img src="images/renderama.png" alt="renderama">
-                <div class="title">renderama</div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://github.com/mandeep/rprime/"><img src="images/rprime.png" alt="r-prime">
-                <div class="title">r-prime</div>
-                </a>
+        <div class="titlebar">
+            <div class="title">Mandeep Bhutani</div>
+            <div class="menu_container">
+                <div class="subtitle">Code + Design</div>
+                <div class="links_menu">
+                    <a href="blog.html">Blog</a> | 
+                    <a href="projects.html">Projects</a> | 
+                    <a href="about.html">About</a>
+                </div>
             </div>
         </div>
+
+
+        <main class="carousel-container">
+            <div class="carousel">
+              <div class="item active">
+                <img src="images/notsochill.png" alt="Image 1" />
+                <p class="caption">Chill But Not Too Chill Obby</p>
+              </div>
+              <div class="item">
+                <img src="images/fragula.png" alt="Image 2" />
+                <p class="caption">Fragula</p>
+              </div>
+              <div class="item">
+                <img src="images/viewimg.png" alt="Image 3" />
+                <p class="caption">Viewimg</p>
+              </div>
+            </div>
+            <button class="btn prev">🠸</button>
+            <button class="btn next">🠺</button>
+            <div class="dots"></div>
+          </main>
+
+    <script src="javascript/carousel.js"></script>
     </body>
 </html>
