@@ -4,6 +4,10 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+p {
+  white-space: pre-line;
+}
+
 .title_container {
   width: 65%;
   /* text-align: center; */
@@ -31,7 +35,6 @@ html, body {
 .blog_post_content {
   font-size: calc(10px + .25vw);
   font-weight: 300;
-  padding-top: 2vh;
 }
 
 .titlebar {
