@@ -297,6 +297,11 @@ a.page_link:active {
   .project_container {
     width: 80%;
   }
+
+  .project_layout > * {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+  }
 }
 
 
@@ -319,5 +324,10 @@ a.page_link:active {
 
   .project_container {
     width: 90%;
+  }
+
+  .project_layout > * {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
   }
 }
