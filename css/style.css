@@ -293,6 +293,10 @@ a.page_link:active {
   .blog_container {
     width: 80%;
   }
+
+  .project_container {
+    width: 80%;
+  }
 }
 
 
@@ -310,6 +314,10 @@ a.page_link:active {
   }
 
   .blog_container {
+    width: 90%;
+  }
+
+  .project_container {
     width: 90%;
   }
 }
