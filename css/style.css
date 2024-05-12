@@ -9,7 +9,7 @@ p {
 }
 
 .title_container {
-  width: 65%;
+  width: 60%;
   /* text-align: center; */
   position: relative;
   margin: auto;
@@ -102,7 +102,7 @@ a.page_link:active {
 }
 
 .carousel-container {
-  width: 65%;
+  width: 60%;
   margin: auto;
   padding-top: 25px;
   position: relative;
@@ -211,7 +211,7 @@ a.page_link:active {
 }
 
 .blog_container {
-  width: 65%;
+  width: 60%;
   position: relative;
   margin: auto;
   padding-top: 3vh;
