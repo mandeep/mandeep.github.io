@@ -251,6 +251,7 @@ a.page_link:active {
 
 
 .project_container {
+  font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   width: 60%;
   position: relative;
   margin: auto;
