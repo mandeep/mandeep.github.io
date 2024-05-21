@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
+  font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
 
@@ -31,7 +32,6 @@ img {
 }
 
 .title {
-  font-family: 'Poppins', sans-serif;
   font-size: calc(12px + 3vw);
   font-weight: 600;
   color: #eee;
@@ -50,7 +50,6 @@ img {
 
 .subtitle {
   color: #eee;
-  font-family: 'Poppins', sans-serif;
   font-size: calc(12px + 1vw);
   font-weight: 300;
 }
@@ -76,7 +75,6 @@ img {
 .links_menu {
   margin-left: auto;
   color: #eee;
-  font-family: 'Poppins', sans-serif;
   font-size: calc(12px + 0.5vw);
   font-weight: 300;
   text-align: center;
@@ -113,7 +111,6 @@ a.page_link:active {
 
 .carousel-container {
   width: 60%;
-  font-family: 'Poppins', sans-serif;
   margin: auto;
   padding-top: 25px;
   position: relative;
@@ -222,7 +219,6 @@ a.page_link:active {
 }
 
 .blog_container {
-  font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   line-height: 1.6;
   width: 60%;
   position: relative;
@@ -260,7 +256,6 @@ a.page_link:active {
 
 
 .project_container {
-  font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   width: 60%;
   position: relative;
   margin: auto;
