@@ -1,15 +1,23 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
+
 
 p {
   white-space: pre-line;
 }
 
+img {
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+}
+
 .title_container {
-  width: 65%;
+  width: 60%;
   /* text-align: center; */
   position: relative;
   margin: auto;
@@ -42,6 +50,7 @@ p {
 
 .subtitle {
   color: #eee;
+  font-family: 'Poppins', sans-serif;
   font-size: calc(12px + 1vw);
   font-weight: 300;
 }
@@ -67,6 +76,7 @@ p {
 .links_menu {
   margin-left: auto;
   color: #eee;
+  font-family: 'Poppins', sans-serif;
   font-size: calc(12px + 0.5vw);
   font-weight: 300;
   text-align: center;
@@ -102,7 +112,7 @@ a.page_link:active {
 }
 
 .carousel-container {
-  width: 65%;
+  width: 60%;
   margin: auto;
   padding-top: 25px;
   position: relative;
@@ -180,11 +190,11 @@ a.page_link:active {
   }
 
   .prev {
-    left: 0%;
+    left: -2%;
   }
 
   .next {
-    right: 0%;
+    right: -2%;
   }
 
   .dots {
@@ -211,7 +221,9 @@ a.page_link:active {
 }
 
 .blog_container {
-  width: 65%;
+  font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  width: 60%;
   position: relative;
   margin: auto;
   padding-top: 3vh;
@@ -228,47 +240,57 @@ a.page_link:active {
 }
 
 .blog_post_content {
+  font-size: calc(12px + 0.3vw);
+  font-weight: 300;
+}
+
+.category_title {
+  font-size: calc(12px + 0.5vw);
+  font-weight: 300;
+}
+
+
+.project_container {
+  font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  width: 60%;
+  position: relative;
+  margin: auto;
+  padding-top: 3vh;
+}
+
+.project_layout {
+  display:block;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.project_layout > * {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.project_title {
+  color: #00adb5;
+  font-size: calc(12px + 0.5vw);
+  font-weight: 300;
+}
+
+.project_info {
   font-size: calc(12px + .3vw);
   font-weight: 300;
 }
 
 
-/* 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-} */
-
-
-/* Create five equal columns that sits next to each other */
-/* .column {
-  flex: 20%;
-  max-width: 20%;
-  padding: 0px 32px 0px 32px;
-} */
-
-/* .project_title {
-  text-align: center;
-  vertical-align: middle;
-  padding: 16px;
-} */
-
-
-/* .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-} */
-
+@media screen and (min-width:1025px) {
+  .project_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .carousel-container {
     width: 80%;
-
-    /* .caption {
-      font-size: 0.75em;
-    } */
   }
 
   .title_container {
@@ -277,6 +299,15 @@ a.page_link:active {
 
   .blog_container {
     width: 80%;
+  }
+
+  .project_container {
+    width: 80%;
+  }
+
+  .project_layout > * {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -296,5 +327,14 @@ a.page_link:active {
 
   .blog_container {
     width: 90%;
+  }
+
+  .project_container {
+    width: 90%;
+  }
+
+  .project_layout > * {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
   }
 }
