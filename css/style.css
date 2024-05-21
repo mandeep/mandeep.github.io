@@ -113,6 +113,7 @@ a.page_link:active {
 
 .carousel-container {
   width: 60%;
+  font-family: 'Poppins', sans-serif;
   margin: auto;
   padding-top: 25px;
   position: relative;
