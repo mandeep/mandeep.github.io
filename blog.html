@@ -30,7 +30,7 @@
         <div class="blog_container">
             <div class="blog_post_title">Lessons Learned from My First Roblox Game</div>
             <div class="blog_post_date">May 22, 2024</div>
-            <div class="blog_post_content"><p>In February 2024, I released an obstacle course game (obby) called <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby" class="page_link">Chill But Not Too Chill Obby</a> on the Roblox platform. For new Roblox developers, creating an obby as a first game seems to be a rite of passage. My journey was no different.
+            <div class="blog_post_content"><p>In February 2024, I released an obstacle course game (obby) called <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby" class="page_link">Chill But Not Too Chill Obby</a> on the Roblox platform. For new Roblox developers, creating an obby as a first game seems to be a rite of passage, and my journey was no different.
 
                 What I thought would take only a week or two turned into a whole month-long adventure, with weekly updates along the way. My original draft was just a basic obby with routine obstacles. However, as I started working on the levels, I felt the urge to design unique and challenging obstacles. I wanted to create something I could be proud of, not just something that looked like the result of a homework exercise.
                 
@@ -46,8 +46,7 @@
 
                 The problem with level 3 was that the obstacles transitioned from their starting position to their ending position way too quickly. This caused many players to get crushed by the obstacles, leading them to quit the game before respawning. To make the level easier, I adjusted the transition time between the start and end positions:</p>
                 <pre>
-                    <code>
-local collection_service = game:GetService("CollectionService")
+                    <code>local collection_service = game:GetService("CollectionService")
 
 local AIR_POSITION = 16
 local GROUND_POSITION = 0
@@ -72,11 +71,11 @@ end</code>
                 </p>
 
                     <video src="images/roblox/level3.mp4" controls preload>Video of Level 3</video><div class="caption">Slower obstacles, but now the player has to wait for them to move</div>
-                <p> Level 13 was another challenging level for players. When I tested it myself, it was passable on the first try. However, it’s easy to detach yourself from the player perspective when you become the level designer, and that’s what happened here. Even though the level was quite easy for me, it certainly wasn’t easy for the Roblox players. The change here was to remove half of the fireballs from each truss and to slow down their angular velocity just a bit.
+                <p> Level 13 was another challenging level for players. When I tested it myself, it was passable on the first try. However, it’s easy to detach yourself from the player perspective when you become the level designer, and that’s what happened here. Even though the level was quite easy for me, it certainly wasn’t easy for the Roblox players. The change here was to remove half of the fireballs from each truss and to slow down their angular velocity just a bit. Another lesson learned! Take what you think is easy and make it ten times easier.
 
                 </p>
                 <video src="images/roblox/level13.mp4" controls preload>Video of Level 13</video><div class="caption">Imagine twice as many fireballs. Also, the player still has to wait</div>
-                 <p>   Level 20 appears to be easy, but I found that players couldn’t time the jump between stars correctly. This level has been tweaked so many times that I think it’s just not suitable for multiplayer gameplay, where player or server lag can cause issues.
+                 <p>   Level 20 appears to be easy, but I found that players couldn’t time the jump between stars correctly. This level has been tweaked so many times that I think it’s just not suitable for multiplayer gameplay, where player or server lag can cause issues. Some single-player obstacles just don't translate well to multiplayer!
                     
                 </p>
                     <video src="images/roblox/level20.mp4" controls preload>Video of Level 20</video><div class="caption">Players failing to jump across the rotating stars</div>
@@ -98,7 +97,7 @@ end</code>
                 <p>
                     Closing thoughts:
 
-This was my first game released on Roblox and the first game I paid to advertise. Within a few advertising windows, I was able to draw in roughly 15,000 players. Unfortunately, after the advertising windows closed, none of these players stuck around. Analytics show that Day 1 Retention hovers around 5% and drops to 0.01% by Day 7. Average Session Time wavered around 5%, up from 3.5% at initial release, but not the massive increase I had hoped for.
+This was my first game released on Roblox, and the first game I paid to advertise. Within a few advertising windows, I was able to draw in roughly 15,000 players. Unfortunately, after the advertising windows closed, none of these players stuck around. Analytics show that Day 1 Retention hovers around 5% and drops to 0.01% by Day 7. Average Session Time wavered around 5%, up from 3.5% at initial release, but not the massive increase I had hoped for.
 
 While I won’t stop developing the game, updates will continue to be sporadic. That said, I learned a lot during the development process, making the entire effort totally worthwhile:
 </p>
