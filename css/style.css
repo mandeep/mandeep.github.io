@@ -354,6 +354,10 @@ a.page_link:active {
     width: 80%;
   }
 
+  .about_container {
+    width: 80%;
+  }
+
   .project_layout > * {
     padding-top: 0;
     padding-bottom: 0.5rem;
@@ -379,6 +383,10 @@ a.page_link:active {
   }
 
   .project_container {
+    width: 90%;
+  }
+
+  .about_container {
     width: 90%;
   }
 
