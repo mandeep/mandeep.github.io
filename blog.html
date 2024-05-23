@@ -28,9 +28,9 @@
 
 
         <div class="blog_container">
-            <div class="blog_post_title">Post-mortem on <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby" class="page_link">Chill But Not To Chill Obby</a></div>
-            <div class="blog_post_date">May 11, 2024</div>
-            <div class="blog_post_content"><p>In February 2024, I released an obstacle course game (obby) called Chill But Not Too Chill Obby on the Roblox platform. For new Roblox developers, creating an obby as a first game seems to be a rite of passage. My journey was no different.
+            <div class="blog_post_title">Lessons Learned from My First Roblox Game</div>
+            <div class="blog_post_date">May 22, 2024</div>
+            <div class="blog_post_content"><p>In February 2024, I released an obstacle course game (obby) called <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby" class="page_link">Chill But Not Too Chill Obby</a> on the Roblox platform. For new Roblox developers, creating an obby as a first game seems to be a rite of passage. My journey was no different.
 
                 What I thought would take only a week or two turned into a whole month-long adventure, with weekly updates along the way. My original draft was just a basic obby with routine obstacles. However, as I started working on the levels, I felt the urge to design unique and challenging obstacles. I wanted to create something I could be proud of, not just something that looked like the result of a homework exercise.
                 
@@ -40,7 +40,7 @@
                 <img src="images/roblox/screen1.png"/><div class="caption">View from checkpoint of rotating blocks obstacles and falling rocks obstacles</div>
                 <img src="images/roblox/screen2.png"/><div class="caption">Swinging platform obstacles with other obstacles in the distance</div>
                 <img src="images/roblox/screen3.png"/><div class="caption">Saw blade obstacles one must pass before reaching the jetpack levels</div>
-                <p>I spent $100 on advertising after publishing the game, which resulted in over 1,000 players the following day, with many more in the coming weeks. Unfortunately, I immediately noticed one major issue when playing alongside these new players: the game’s difficulty was on Nightmare mode! One player even quipped that the game should be called Rage Quit Obby.
+                <p>I spent $100 on advertising after publishing the game, which resulted in over 1,000 players the following day, with many more in the coming weeks. Unfortunately, I immediately noticed one major issue when playing alongside these new players: the game’s difficulty was on <a href="https://doom.fandom.com/wiki/Skill_level#Doom,_Doom_II_and_Final_Doom_skill_levels" class="page_link">Nightmare</a> mode! One player even quipped that the game should be called <i>Rage Quit Obby</i>.
 
                 There were a few levels where players were quitting immediately, with most leaving as early as level 3. Two of the most important factors to consider for your game are player retention and player engagement. Good engagement for obbies is typically around 10 -20 minutes of session time. With players leaving at level 3, the average session time for my game was as low as 3 minutes!
 
@@ -82,8 +82,37 @@ end</code>
                     <video src="images/roblox/level20.mp4" controls preload>Video of Level 20</video><div class="caption">Players failing to jump across the rotating stars</div>
                     
                     <p>While these three levels gave players headaches and will probably need continuous tweaks until the balance is right, there were other levels that players seemed to enjoy or find challenging in a good way.                    
-                        
+
                 </p>
+
+                <video src="images/roblox/level1troll.mp4" controls preload>Video of Level 1</video><div class="caption">Players loved the buttons on this platform, especially this troll</div>
+                <img src="images/roblox/level16.png"/><div class="caption">Tower with protruding pistons</div>
+                <img src="images/roblox/level18.png"/><div class="caption">Rotating log that also moves along a pair of tracks</div>
+                <img src="images/roblox/level21.png"/><div class="caption">Platform that the players guide using the four buttons</div>
+
+                <p>The jetpack levels were a massive hit with the players, who constantly asked for more of these levels (possibly within a new experience). For level 34, I used a <a href="https://en.wikipedia.org/wiki/Halton_sequence" class="page_link">Halton sequence</a> to pseudo-randomize the location of the obstacles that needed to be avoided. The level ended up being a challenging one; however, players were happy to continue attempting it until they finally passed it.
+
+                </p>
+                <img src="images/roblox/level34.png"/><div class="caption">Players control the jetpacks and dodge the obstacles to reach the end of the game</div>
+
+                <p>
+                    Closing thoughts:
+
+This was my first game released on Roblox and the first game I paid to advertise. Within a few advertising windows, I was able to draw in roughly 15,000 players. Unfortunately, after the advertising windows closed, none of these players stuck around. Analytics show that Day 1 Retention hovers around 5% and drops to 0.01% by Day 7. Average Session Time wavered around 5%, up from 3.5% at initial release, but not the massive increase I had hoped for.
+
+While I won’t stop developing the game, updates will continue to be sporadic. That said, I learned a lot during the development process, making the entire effort totally worthwhile:
+</p>
+<ul>
+<li>I did not have anyone playtest the game prior to advertising. This meant I discovered the game was too difficult during an advertising window with live players, which is not ideal. Going forward, I will playtest, even if it means making my friends sign up for a specific platform.</li>
+<li>I thought that creating unique and challenging obstacles would draw in new players and keep old players returning. This was not the case. In the end, my game was still an obstacle course with nothing noteworthy differentiating it from the competition.</li>
+<li>It’s better to spend more time on a game to ensure everything is feature complete, rather than releasing something sooner and iterating on it over time. This is a common theme differentiating the work of Technical Artists and Software Engineers, and it seems to apply to games as well. The one caveat may be when you need to be first to market to capitalize on something new to the platform you’re working on.</li>
+<li>The Roblox Devforum is a goldmine of information. I cannot overstate how awesome the developers on that forum are for assisting others and for writing amazing content.</li>
+</ul>
+
+<p>Although I’m currently focusing solely on Fortnite Creative, I still have some ideas I want to bring to fruition on Roblox later this year. While things didn't go as planned with the release of this game, I learned so much and I'm excited to apply those lessons to future projects. Thanks for reading, and please reach out if you have any comments about this post. I always appreciate feedback and look forward to sharing more updates with you soon!
+
+
+</p>
             </div>
         </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
