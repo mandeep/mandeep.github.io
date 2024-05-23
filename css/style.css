@@ -315,6 +315,15 @@ a.page_link:active {
 .project_info {
   font-size: calc(12px + .4vw);
   font-weight: 300;
+  line-height: 1.6;
+}
+
+.about_container {
+  line-height: 1.6;
+  width: 60%;
+  position: relative;
+  margin: auto;
+  padding-top: 3vh;
 }
 
 
