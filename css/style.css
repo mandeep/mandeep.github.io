@@ -278,7 +278,7 @@ a.page_link:active {
 }
 
 .blog_post_content {
-  font-size: calc(12px + 0.3vw);
+  font-size: calc(12px + 0.35vw);
   font-weight: 300;
   padding-top: 1vh;
 }
