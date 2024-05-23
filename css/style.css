@@ -314,7 +314,7 @@ a.page_link:active {
 }
 
 .project_info {
-  font-size: calc(12px + .3vw);
+  font-size: calc(12px + .4vw);
   font-weight: 300;
 }
 
