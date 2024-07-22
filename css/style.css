@@ -4,13 +4,13 @@ html, body {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
   font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  color: #444;
 }
 
 
 p {
   white-space: pre-line;
   margin: 0;
+  color: #444;
 }
 
 pre {
@@ -171,7 +171,7 @@ a.page_link:active {
     text-align: center;
     font-size: 0.85em;
     background-color: #fff;
-    color: #444;
+    color: #333;
   }
 
   .btn {
@@ -264,7 +264,7 @@ a.page_link:active {
     text-align: center;
     font-size: 0.85em;
     background-color: #fff;
-    color: #444;
+    color: #333;
   }
 }
 
