@@ -4,6 +4,7 @@ html, body {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
   font-family: "Poppins", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  color: #555;
 }
 
 
@@ -170,7 +171,7 @@ a.page_link:active {
     text-align: center;
     font-size: 0.85em;
     background-color: #fff;
-    color: #000;
+    color: #555;
   }
 
   .btn {
@@ -263,7 +264,7 @@ a.page_link:active {
     text-align: center;
     font-size: 0.85em;
     background-color: #fff;
-    color: #000;
+    color: #555;
   }
 }
 
