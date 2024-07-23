@@ -36,6 +36,11 @@ pre {
   word-wrap: break-word;
 } */
 
+code {
+  border-left: 1px solid #f36d33;
+  border-bottom: 1px solid #d8dee9;
+}
+
 
 .list {
   ul {
