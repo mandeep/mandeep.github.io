@@ -241,7 +241,8 @@ a.page_link:active {
   padding-bottom: 1vh;
 }
 
-.blog_year {
+.blog_year,
+.notes_year {
   font-size: calc(12px + .5vw);
   font-weight: 300;
   padding-top: 3vh;
