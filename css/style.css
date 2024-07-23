@@ -172,8 +172,7 @@ a.page_link:active {
   text-decoration: none;
 }
 
-.home_container,
-.notes_container {
+.home_container {
   line-height: 1.6;
   width: 50%;
   position: relative;
@@ -291,7 +290,8 @@ a.page_link:active {
 }
 
 
-.project_container {
+.project_container,
+.notes_container {
   width: 50%;
   position: relative;
   margin: auto;
