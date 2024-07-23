@@ -41,19 +41,30 @@ code {
 } */
 
 ul {
+  /* list-style: none; */
+  color: #d3d9e1;
+  /* padding-left: 0.25em; */
+}​
+
+li {
+  color: #d3d9e1;
+  padding-left: 0;
+}
+
+#sections ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0em;
   text-indent: -1em;
 }
 
-li {
+#sections li {
   padding-left: 1em;
   text-indent: -1em;
   color: #d3d9e1;
 }
 
-li:before {
+#sections li:before {
   content: "=>";
   padding-right: 5px;
 }
