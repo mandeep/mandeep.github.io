@@ -138,21 +138,21 @@ img {
 
 
 a.page_link:link {
-  color: #ff83bc;
+  color: #a9dcf1;
   text-decoration: none;
 }
 
 a.page_link:visited {
-  color: #ff83bc;
+  color: #a9dcf1;
   text-decoration: none;
 }
 
 a.page_link:hover {
-  color: #ffbedc;
+  color: #dbf0f9;
 }
 
 a.page_link:active {
-  color: #ff83bc;
+  color: #a9dcf1;
   text-decoration: none;
 }
 
