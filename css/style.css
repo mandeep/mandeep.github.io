@@ -113,7 +113,7 @@ img {
 }
 
 #subheader a:hover {
-  color: #00e87e;
+  color: #00f082;
 }
 
 .links_menu {
@@ -129,30 +129,30 @@ img {
 #menu a:visited,
 #menu a:active {
   text-decoration: none;
-  color: #ff574f;
+  color: #e56580;
 }
 
 #menu a:hover {
-  color: #ffa09c;
+  color: #f0a6b6;
 }
 
 
 a.page_link:link {
-  color: #ff83bc;
+  color: #e56580;
   text-decoration: none;
 }
 
 a.page_link:visited {
-  color: #ff83bc;
+  color: #e56580;
   text-decoration: none;
 }
 
 a.page_link:hover {
-  color: #ffbedc;
+  color: #f0a6b6;
 }
 
 a.page_link:active {
-  color: #ff83bc;
+  color: #e56580;
   text-decoration: none;
 }
 
