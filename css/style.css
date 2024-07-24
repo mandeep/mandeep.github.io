@@ -109,11 +109,11 @@ img {
 #subheader a:visited,
 #subheader a:active {
   text-decoration: none;
-  color: #65e58a;
+  color: #00b562;
 }
 
 #subheader a:hover {
-  color: #a8f0bd;
+  color: #00f082;
 }
 
 .links_menu {
