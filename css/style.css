@@ -315,17 +315,6 @@ a.page_link:active {
   line-height: 1.6;
 }
 
-.about_container {
-  line-height: 1.6;
-  width: 50%;
-  position: relative;
-  margin: auto;
-  padding-top: 3vh;
-  font-size: calc(12px + .4vw);
-  font-weight: 300;
-  line-height: 1.6;
-}
-
 
 @media screen and (min-width:1025px) {
   .project_layout {
@@ -335,36 +324,15 @@ a.page_link:active {
 }
 
 @media screen and (max-width: 1024px) {
-  .carousel-container {
-    width: 80%;
-  }
-
-  .title_container {
-    width: 80%;
-  }
-
-  .blog_container {
-    width: 80%;
-  }
-
-  .project_container {
-    width: 80%;
-  }
-
-  .about_container {
-    width: 80%;
-  }
-
+  .title_container,
+  .blog_container,
+  .project_container,
   .home_container,
   .notes_container {
     width: 80%;
   }
 
-  .project_layout > * {
-    padding-top: 0;
-    padding-bottom: 0.5rem;
-  }
-
+  .project_layout > *,
   .blog_layout > * {
     padding-top: 0;
     padding-bottom: 0.5rem;
@@ -373,36 +341,16 @@ a.page_link:active {
 
 
 @media screen and (max-width: 767px) {
-  .carousel-container {
-    width: 90%;
-    
-    .caption {
-      font-size: 0.75em;
-    }
-  }
-
-  .title_container {
-    width: 90%;
-  }
-
-  .blog_container {
-    width: 90%;
-  }
-
-  .project_container {
-    width: 90%;
-  }
-
-  .about_container {
-    width: 90%;
-  }
-
+  .title_container,
+  .blog_container,
+  .project_container,
   .home_container,
   .notes_container {
     width: 90%;
   }
 
-  .project_layout > * {
+  .project_layout > *,
+  .blog_layout > * {
     padding-top: 0;
     padding-bottom: 0.5rem;
   }
@@ -412,11 +360,6 @@ a.page_link:active {
     grid-template-areas:
       "post_date"
       "post_name"; 
-  }
-
-  .blog_layout > * {
-    padding-top: 0;
-    padding-bottom: 0.5rem;
   }
 
   .blog_landing_title {
