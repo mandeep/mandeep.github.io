@@ -30,6 +30,10 @@ pre {
     color: #d3d9e1;
     padding-left: 0;
   }
+
+  li::marker {
+    color: #d3d9e1;
+  }
 }
 
 .home_container {
@@ -261,9 +265,11 @@ a.page_link:active {
   color: #ffc683;
 }
 
-.blog_post_content {
+.blog_post_content,
+.project_subtitle {
   font-size: calc(12px + 0.4vw);
   font-weight: 300;
+  color: #d3d9e1;
 }
 
 .category_title {
@@ -279,6 +285,10 @@ a.page_link:active {
   width: 50%;
   position: relative;
   margin: auto;
+
+  .project_tool_info {
+    margin-bottom: .5em;
+  }
 }
 
 .project_layout {
