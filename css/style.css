@@ -250,7 +250,7 @@ a.page_link:active {
   font-size: calc(12px + .3vw);
   font-weight: 300;
   grid-area: post_date;
-  color: #ecedee;
+  color: #ffc683;
 }
 
 .blog_post_title {
