@@ -260,7 +260,7 @@ a.page_link:active {
 }
 
 .blog_post_date {
-  font-size: calc(12px + 0.45vw);
+  font-size: calc(12px + 0.35vw);
   font-weight: 300;
   color: #ffc683;
 }
