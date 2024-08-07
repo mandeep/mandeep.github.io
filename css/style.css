@@ -10,7 +10,7 @@ html, body {
 p {
   white-space: pre-line;
   margin: 0;
-  color: #c7cfd9;
+  color: #d3d9e1;
 }
 
 
@@ -23,16 +23,16 @@ pre {
 
 .list {
   ul {
-    color: #c7cfd9;
+    color: #d3d9e1;
   }​
 
   li {
-    color: #c7cfd9;
+    color: #d3d9e1;
     padding-left: 0;
   }
 
   li::marker {
-    color: #c7cfd9;
+    color: #d3d9e1;
   }
 }
 
@@ -47,7 +47,7 @@ pre {
   li {
     padding-left: 1em;
     text-indent: -1em;
-    color: #c7cfd9;
+    color: #d3d9e1;
   }
 
   li:before {
@@ -269,7 +269,7 @@ a.page_link:active {
 .project_subtitle {
   font-size: calc(12px + 0.4vw);
   font-weight: 300;
-  color: #c7cfd9;
+  color: #d3d9e1;
 }
 
 .category_title {
