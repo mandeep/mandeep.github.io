@@ -243,6 +243,7 @@ a.page_link:active {
   font-size: calc(12px + .35vw);
   font-weight: 300;
   grid-area: post_name;
+  color: #ffc683;
 }
 
 .blog_landing_date {

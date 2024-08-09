@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.css">
         <title>Mandeep Bhutani</title>
     </head>
     <body>
@@ -27,9 +28,35 @@
           </div>
         </div>
 
-        <div class="notes_container">
-            <div class="notes_year">2024</div>
+        <div class="project_container">
+            <div class="blog_year">2024</div>
+            <div class="blog_layout">
+                <div class="blog_landing_title">Generating Obstacle Colors</div>
+                <div class="blog_landing_date">August 9, 2024</div>
+            </div>
+
+            <div class="blog_post_content">
+            <p>When designing obstacles for <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby" class="page_link">Chill But Not Too Chill Obby</a>, I wanted the color of the obstacles to be pastel colors that varied along the color wheel. I decided to write a small snippet that sorts the obstacles based on their position on the Y axis and then applies a color based on that position.</p>
+            <pre>
+                <code class="code_block">math.randomseed(os.time())
+
+local obstacles_folder = game.Workspace.Stage27.Spheres
+local obstacles = obstacles_folder:GetChildren()
+
+table.sort(obstacles, function(a,b) return a.Position.Y < b.Position.Y end)
+
+for i, obstacle in obstacles do
+    obstacle.Color = Color3.fromHSV(i / #obstacles, 0.3, 1)	
+end
+                </code>
+            </pre>
+            <p>Result:</p>
+            <a href="./images/notes/obstacle_colors.png"><img src="./images/notes/obstacle_colors.png"/></a>
 
         </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
     </body>
 </html>
