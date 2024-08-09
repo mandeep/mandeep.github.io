@@ -252,6 +252,7 @@ a.page_link:active {
   font-weight: 300;
   grid-area: post_date;
   color: #ecedee;
+  padding-top: 1.2vh;
 }
 
 .blog_post_title {
