@@ -77,11 +77,11 @@ img {
 .title {
   font-size: calc(12px + 3vw);
   font-weight: 600;
-  color: #ecedee;
+  color: #d3d9e1;
 }
 
 .name {
-  color: #ecedee;
+  color: #d3d9e1;
 }
 
 .menu_container {
@@ -92,7 +92,7 @@ img {
 }
 
 .subtitle {
-  color: #ecedee;
+  color: #d3d9e1;
   font-size: calc(12px + 1vw);
   font-weight: 300;
 }
@@ -126,7 +126,7 @@ img {
   font-weight: 300;
   text-align: center;
   padding-right: 0;
-  color: #ecedee;
+  color: #d3d9e1;
 }
 
 #menu a:link,
@@ -211,7 +211,7 @@ a.page_link:active {
     text-align: center;
     font-size: 0.85em;
     background-color: #222831;
-    color: #ecedee;
+    color: #d3d9e1;
   }
 }
 
@@ -251,7 +251,7 @@ a.page_link:active {
   font-size: calc(12px + .3vw);
   font-weight: 300;
   grid-area: post_date;
-  color: #ecedee;
+  color: #d3d9e1;
   padding-top: 1.2vh;
 }
 
