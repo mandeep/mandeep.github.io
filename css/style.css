@@ -30,6 +30,10 @@ pre {
     color: #d3d9e1;
     padding-left: 0;
   }
+
+  li::marker {
+    color: #d3d9e1;
+  }
 }
 
 .home_container {
@@ -73,11 +77,11 @@ img {
 .title {
   font-size: calc(12px + 3vw);
   font-weight: 600;
-  color: #ecedee;
+  color: #d3d9e1;
 }
 
 .name {
-  color: #ecedee;
+  color: #d3d9e1;
 }
 
 .menu_container {
@@ -88,7 +92,7 @@ img {
 }
 
 .subtitle {
-  color: #ecedee;
+  color: #d3d9e1;
   font-size: calc(12px + 1vw);
   font-weight: 300;
 }
@@ -97,11 +101,11 @@ img {
 #header a:visited,
 #header a:active {
   text-decoration: none;
-  color: #76c7e8;
+  color: #65c0e5;
 }
 
 #header a:hover {
-  color: #a9dcf1;
+  color: #98d5ee;
 }
 
 
@@ -109,11 +113,11 @@ img {
 #subheader a:visited,
 #subheader a:active {
   text-decoration: none;
-  color: #00b562;
+  color: #71c78a;
 }
 
 #subheader a:hover {
-  color: #00dc77;
+  color: #9bd8ad;
 }
 
 .links_menu {
@@ -122,7 +126,7 @@ img {
   font-weight: 300;
   text-align: center;
   padding-right: 0;
-  color: #ecedee;
+  color: #d3d9e1;
 }
 
 #menu a:link,
@@ -207,7 +211,7 @@ a.page_link:active {
     text-align: center;
     font-size: 0.85em;
     background-color: #222831;
-    color: #ecedee;
+    color: #d3d9e1;
   }
 }
 
@@ -229,7 +233,7 @@ a.page_link:active {
   font-size: calc(12px + .5vw);
   font-weight: 300;
   padding-top: 3vh;
-  color: #ecedee;
+  color: #ffc683;
 }
 
 .blog_landing_title {
@@ -239,6 +243,7 @@ a.page_link:active {
   font-size: calc(12px + .35vw);
   font-weight: 300;
   grid-area: post_name;
+  color: #ffc683;
 }
 
 .blog_landing_date {
@@ -246,7 +251,8 @@ a.page_link:active {
   font-size: calc(12px + .3vw);
   font-weight: 300;
   grid-area: post_date;
-  color: #ecedee;
+  color: #d3d9e1;
+  padding-top: 1.2vh;
 }
 
 .blog_post_title {
@@ -256,14 +262,16 @@ a.page_link:active {
 }
 
 .blog_post_date {
-  font-size: calc(12px + 0.45vw);
+  font-size: calc(12px + 0.35vw);
   font-weight: 300;
   color: #ffc683;
 }
 
-.blog_post_content {
+.blog_post_content,
+.project_subtitle {
   font-size: calc(12px + 0.4vw);
   font-weight: 300;
+  color: #d3d9e1;
 }
 
 .category_title {
@@ -279,6 +287,10 @@ a.page_link:active {
   width: 50%;
   position: relative;
   margin: auto;
+
+  .project_tool_info {
+    margin-bottom: .5em;
+  }
 }
 
 .project_layout {
@@ -298,18 +310,8 @@ a.page_link:active {
   font-weight: 300;
 }
 
-.project_info {
-  font-size: calc(12px + .4vw);
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.about_container {
-  line-height: 1.6;
-  width: 50%;
-  position: relative;
-  margin: auto;
-  padding-top: 3vh;
+.project_info,
+.project_tool_info {
   font-size: calc(12px + .4vw);
   font-weight: 300;
   line-height: 1.6;
@@ -324,36 +326,15 @@ a.page_link:active {
 }
 
 @media screen and (max-width: 1024px) {
-  .carousel-container {
-    width: 80%;
-  }
-
-  .title_container {
-    width: 80%;
-  }
-
-  .blog_container {
-    width: 80%;
-  }
-
-  .project_container {
-    width: 80%;
-  }
-
-  .about_container {
-    width: 80%;
-  }
-
+  .title_container,
+  .blog_container,
+  .project_container,
   .home_container,
   .notes_container {
     width: 80%;
   }
 
-  .project_layout > * {
-    padding-top: 0;
-    padding-bottom: 0.5rem;
-  }
-
+  .project_layout > *,
   .blog_layout > * {
     padding-top: 0;
     padding-bottom: 0.5rem;
@@ -362,36 +343,16 @@ a.page_link:active {
 
 
 @media screen and (max-width: 767px) {
-  .carousel-container {
-    width: 90%;
-    
-    .caption {
-      font-size: 0.75em;
-    }
-  }
-
-  .title_container {
-    width: 90%;
-  }
-
-  .blog_container {
-    width: 90%;
-  }
-
-  .project_container {
-    width: 90%;
-  }
-
-  .about_container {
-    width: 90%;
-  }
-
+  .title_container,
+  .blog_container,
+  .project_container,
   .home_container,
   .notes_container {
     width: 90%;
   }
 
-  .project_layout > * {
+  .project_layout > *,
+  .blog_layout > * {
     padding-top: 0;
     padding-bottom: 0.5rem;
   }
@@ -401,11 +362,6 @@ a.page_link:active {
     grid-template-areas:
       "post_date"
       "post_name"; 
-  }
-
-  .blog_layout > * {
-    padding-top: 0;
-    padding-bottom: 0.5rem;
   }
 
   .blog_landing_title {
