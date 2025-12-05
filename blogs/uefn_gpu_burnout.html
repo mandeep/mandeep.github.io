@@ -42,7 +42,7 @@
                 </p>
 
                 <p>
-                    I came across many threads like <a href="https://www.reddit.com/r/techsupport/comments/e7qk2w/pc_displays_suddenly_turning_off_with_max_fan/" class="page_link">this</a>, <a href="https://www.reddit.com/r/techsupport/comments/1749rda/monitor_shuts_off_and_fans_speed_up_but_i_dont/" class="page_link">this</a>, and <a href="https://www.reddit.com/r/pcgamingtechsupport/comments/whs5yt/screen_loses_signal_and_gpu_fans_rev_to_max_rpm/" class="page_link">this</a> where others were experiencing the exact same issue; however, everyone offered a different solution to the problem. I tried many of the suggested solutions: reseating the GPU, checking all hardware cable connections including the troublesome 12VHPWR cable, running stress tests on individual components, and even buying a GPU support bracket. The stability issues persisted.
+                    I came across many threads like <a href="https://www.reddit.com/r/techsupport/comments/e7qk2w/pc_displays_suddenly_turning_off_with_max_fan/" class="page_link">this</a>, <a href="https://www.reddit.com/r/techsupport/comments/1749rda/monitor_shuts_off_and_fans_speed_up_but_i_dont/" class="page_link">this</a>, and <a href="https://www.reddit.com/r/pcgamingtechsupport/comments/whs5yt/screen_loses_signal_and_gpu_fans_rev_to_max_rpm/" class="page_link">this</a> where others were experiencing the exact same issue; however, everyone offered a different solution. I tried many of the suggested solutions: reseating the GPU, checking all hardware cable connections including the troublesome 12VHPWR cable, running stress tests on individual components, and even buying a GPU support bracket. The stability issues persisted.
                 </p>
 
                 <p>
@@ -50,15 +50,15 @@
                 </p>
 
                 <p>
-                    Nvidia Support mentioned the wait time for a replacement would be a few weeks, so I went to Best Buy and bought an MSI RTX 3050 to stay productive (in the end, the replacement card arrived in just a few days. Major props to Nvidia for that!). After installing the 3050 and booting up my PC, I opened <a href="https://www.unrealengine.com/en-US/uses/uefn-unreal-editor-for-fortnite" class="page_link">Unreal Editor for Fortnite (UEFN)</a> to continue my work. Since UEFN is experimental to say the least, I figured digging deeper into the application was worth a shot.
+                    Nvidia Support mentioned the wait time for a replacement would be a few weeks, so I went to Best Buy and bought an MSI RTX 3050 to stay productive. In the end, the replacement card arrived almost immediately, so major props to Nvidia for that! After installing the replacement 4070 and booting up my PC, I opened <a href="https://www.unrealengine.com/en-US/uses/uefn-unreal-editor-for-fortnite" class="page_link">Unreal Editor for Fortnite (UEFN)</a> to continue my work. Since UEFN is experimental to say the least, I figured digging deeper into the application was worth a shot.
                 </p>
 
                 <p>
-                    After UEFN had loaded my content, I noticed the FPS display in the viewport was much lower than before. This was expected as I was using the backup GPU.
+                    After UEFN loaded my content, I displayed the FPS on the viewport to make sure the GPU was handling things correctly. Most DCCs, including Unreal Editor, cap the viewport frame rate to 60 FPS by default.
                 </p>
 
                 <p>
-                    But it was a light bulb moment: running 120 FPS in the viewport all day long would be extremely taxing on the RTX 4070 GPU:
+                    This is where it hit me: the viewport in UEFN was running at a whopping 120 FPS! Running that frame rate all day long is extremely taxing on a GPU:
                 </p>
                 <!-- <p>
                     When I removed the backup GPU and installed the replacement RTX 4070 FE, the viewport showed 120 FPS:
@@ -75,7 +75,7 @@
                 <a href="../images/uefn/nvidia_control_panel.png"><img src="../images/uefn/nvidia_control_panel.png"/></a><div class="caption">Changing the Max Frame Rate in UEFN to 60 FPS</div>
 
                 <p>
-                    In the end, this whole experience taught me just how much stress the viewport in UEFN can put on a GPU. Monitoring FPS and capping max frame rate turned out to be crucial in keeping my system stable. I haven’t experienced this issue with other DCCs, so it seems to be unique to UEFN. Hopefully sharing what I went through helps other creators avoid the same kind of GPU burnout.
+                    In the end, this whole experience taught me just how much stress the viewport in UEFN can put on a GPU. Monitoring FPS and capping the max frame rate turned out to be crucial in keeping my system stable. I haven’t experienced this issue with other DCCs, so it seems to be unique to UEFN. Hopefully sharing what I went through helps other creators avoid the same kind of GPU burnout.
                 </p>
 
             </div>
