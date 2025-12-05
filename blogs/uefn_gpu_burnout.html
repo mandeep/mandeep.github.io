@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="apple-touch-icon" href="favicon.png"/>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.css">
+        <title>Mandeep Bhutani</title>
+    </head>
+    <body>
+        <div class="titlebar">
+          <div class="title_container">
+            <div class="title" id="header"><a href="../">Mandeep Bhutani</a></div>
+            <div class="menu_container">
+                <div class="subtitle" id="subheader"><a href="../">Code + Design</a></div>
+                <div class="links_menu" id="menu">
+                    <a href="../blog">Blog</a> | 
+                    <a href="../notes">Notes</a> |
+                    <a href="../projects">Projects</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="blog_container">
+            <div class="blog_post_title">Understanding GPU Burnout in Unreal Editor for Fortnite</div>
+            <div class="blog_post_date">Drafted on October 26, 2024 and published December 4, 2025</div>
+            <div class="blog_post_content">
+                <p>
+                    About six months after I finished my <a href="https://pcpartpicker.com/user/m2thedeep/saved/k9XJmG" class="page_link">PC build</a>, I started running into serious stability issues. Randomly, the display would cut to black and the GPU fans would instantly rev up to 100%.
+                </p>
+
+                <p>
+                    It seemed like this only occurred when I had all of my digital content creation (DCC) applications open in the background while testing a graphics-intensive game. After some time, the problem appeared even when all applications were closed. I decided to investigate on Reddit to see if any others had run into the same problem.
+                </p>
+
+                <p>
+                    I came across many threads like <a href="https://www.reddit.com/r/techsupport/comments/e7qk2w/pc_displays_suddenly_turning_off_with_max_fan/" class="page_link">this</a>, <a href="https://www.reddit.com/r/techsupport/comments/1749rda/monitor_shuts_off_and_fans_speed_up_but_i_dont/" class="page_link">this</a>, and <a href="https://www.reddit.com/r/pcgamingtechsupport/comments/whs5yt/screen_loses_signal_and_gpu_fans_rev_to_max_rpm/" class="page_link">this</a> where others were experiencing the exact same issue; however, everyone had a different solution to the problem. I tried many of the suggested solutions: reseating the GPU, checking all hardware cable connections including the troublesome 12VHPWR cable, running stress tests on individual components, and even buying a GPU support bracket. The stability issues persisted.
+                </p>
+
+                <p>
+                    Eventually, I discussed my issue with Nvidia Tech Support, and after reviewing event logs, we concluded that an RMA of my RTX 4070 FE would be worthwhile.
+                </p>
+
+                <p>
+                    Nvidia Support mentioned the wait time for a replacement would be a few weeks, so I went to Best Buy and bought an MSI RTX 3050 to stay productive (in the end, the card arrived in just a few days. Major props to Nvidia for that!). After installing the 3050 and booting up my PC, I opened <a href="https://www.unrealengine.com/en-US/uses/uefn-unreal-editor-for-fortnite" class="page_link">Unreal Editor for Fortnite (UEFN)</a> to continue my work. Since UEFN is experimental to say the least, I figured digging deeper into the application was worth a shot. 
+                </p>
+
+                <p>
+                    After UEFN had loaded my content, I noticed the FPS display in the viewport was much lower than before. This was expected as I was using the backup GPU.
+                </p>
+
+                <p>
+                    But it was a light bulb moment: running 120 FPS in the viewport all day long would be extremely taxing on the GPU:
+                </p>
+                <!-- <p>
+                    When I removed the backup GPU and installed the replacement RTX 4070 FE, the viewport showed 120 FPS:
+                </p> -->
+
+                <br>
+                <a href="../images/uefn/uefn_fps.png"><img src="../images/uefn/uefn_fps.png"/></a><div class="caption">The FPS displays in the upper-right corner of the viewport</div>
+
+                <p>
+                    I logged into the Unreal Engine Developer Forums and found other creators discussing GPU overheating issues <a href="https://forums.unrealengine.com/t/feature-request-fixed-framerate-in-uefn/800908" class="page_link">here</a>. While UEFN doesn’t currently allow a fixed frame rate in the viewport, I shared my workaround of adding the UEFN executable to the Nvidia Control Panel and capping FPS at 60:
+                </p>
+
+                <br>
+                <a href="../images/uefn/nvidia_control_panel.png"><img src="../images/uefn/nvidia_control_panel.png"/></a><div class="caption">Changing the Max Frame Rate in UEFN to 60 FPS</div>
+
+                <p>
+                    In the end, this whole experience taught me just how much stress the viewport in UEFN can put on a GPU. Monitoring FPS and capping max frame rate turned out to be the key to keeping my system stable. It was a massive headache at the time, but now my system runs smoothly. Hopefully sharing what I went through helps other creators avoid the same kind of GPU burnout.
+                </p>
+
+            </div>
+        </div>
+    </body>
+</html>
