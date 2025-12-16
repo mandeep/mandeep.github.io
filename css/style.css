@@ -100,7 +100,7 @@ img {
 
 .subtitle {
   color: #d3d9e1;
-  font-size: clamp(15px, calc(12px + 1vw), 999px);
+  font-size: clamp(15.5px, calc(12px + 1vw), 999px);
   font-weight: 300;
 }
 
@@ -129,7 +129,7 @@ img {
 
 .links_menu {
   margin-left: auto;
-  font-size: clamp(13px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
   text-align: center;
   padding-right: 0;
@@ -179,7 +179,7 @@ a.page_link:active {
 
 .section_title {
   color: #ffc683;
-  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
 }
 
@@ -237,7 +237,7 @@ a.page_link:active {
 
 .blog_year,
 .notes_year {
-  font-size: clamp(16px, calc(12px + .5vw), 999px);
+  font-size: clamp(14.5px, calc(12px + .5vw), 999px);
   font-weight: 300;
   padding-top: 3vh;
   color: #ffc683;
@@ -255,7 +255,7 @@ a.page_link:active {
 
 .blog_landing_date {
   padding-left: 2vh;
-  font-size: clamp(13px, calc(12px + .3vw), 999px);
+  font-size: clamp(14.5px, calc(12px + .3vw), 999px);
   font-weight: 300;
   grid-area: post_date;
   color: #d3d9e1;
@@ -263,7 +263,7 @@ a.page_link:active {
 }
 
 .blog_post_title {
-  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
   color: #ffc683;
 }
@@ -282,7 +282,7 @@ a.page_link:active {
 }
 
 .category_title {
-  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
   padding-top: 3vh;
   color: #ffc683;
@@ -313,7 +313,7 @@ a.page_link:active {
 
 .project_title {
   color: #00adb5;
-  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
 }
 
