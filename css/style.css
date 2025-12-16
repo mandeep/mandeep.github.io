@@ -82,7 +82,7 @@ img {
 }
 
 .title {
-  font-size: clamp(28px, calc(12px + 3vw), 999px);
+  font-size: clamp(24px, calc(12px + 3vw), 999px);
   font-weight: 600;
   color: #d3d9e1;
 }
@@ -100,7 +100,7 @@ img {
 
 .subtitle {
   color: #d3d9e1;
-  font-size: clamp(16px, calc(12px + 1vw), 999px);
+  font-size: clamp(15px, calc(12px + 1vw), 999px);
   font-weight: 300;
 }
 
@@ -129,7 +129,7 @@ img {
 
 .links_menu {
   margin-left: auto;
-  font-size: clamp(14px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(13px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
   text-align: center;
   padding-right: 0;
@@ -173,13 +173,13 @@ a.page_link:active {
   position: relative;
   margin: auto;
   padding-top: 0;
-  font-size: clamp(16px, calc(12px + 0.4vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.4vw), 999px);
   font-weight: 300;
 }
 
 .section_title {
   color: #ffc683;
-  font-size: clamp(18px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
 }
 
@@ -216,7 +216,7 @@ a.page_link:active {
     padding-top: 0;
     padding-bottom: 3vh;
     text-align: center;
-    font-size: clamp(14px, calc(12px + 0.3vw), 999px);
+    font-size: clamp(13px, calc(12px + 0.3vw), 999px);
     background-color: #222831;
     color: #d3d9e1;
   }
@@ -237,7 +237,7 @@ a.page_link:active {
 
 .blog_year,
 .notes_year {
-  font-size: clamp(18px, calc(12px + .5vw), 999px);
+  font-size: clamp(16px, calc(12px + .5vw), 999px);
   font-weight: 300;
   padding-top: 3vh;
   color: #ffc683;
@@ -247,7 +247,7 @@ a.page_link:active {
   border: 1px solid transparent;
   border-right-color: #aaa;
   padding-right: 2vh;
-  font-size: clamp(16px, calc(12px + .35vw), 999px);
+  font-size: clamp(15px, calc(12px + .35vw), 999px);
   font-weight: 300;
   grid-area: post_name;
   color: #ffc683;
@@ -255,7 +255,7 @@ a.page_link:active {
 
 .blog_landing_date {
   padding-left: 2vh;
-  font-size: clamp(14px, calc(12px + .3vw), 999px);
+  font-size: clamp(13px, calc(12px + .3vw), 999px);
   font-weight: 300;
   grid-area: post_date;
   color: #d3d9e1;
@@ -263,26 +263,26 @@ a.page_link:active {
 }
 
 .blog_post_title {
-  font-size: clamp(18px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
   color: #ffc683;
 }
 
 .blog_post_date {
-  font-size: clamp(14px, calc(12px + 0.35vw), 999px);
+  font-size: clamp(13px, calc(12px + 0.35vw), 999px);
   font-weight: 300;
   color: #ffc683;
 }
 
 .blog_post_content,
 .project_subtitle {
-  font-size: clamp(16px, calc(12px + 0.4vw), 999px);
+  font-size: clamp(14.5px, calc(12px + 0.4vw), 999px);
   font-weight: 300;
   color: #d3d9e1;
 }
 
 .category_title {
-  font-size: clamp(18px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
   padding-top: 3vh;
   color: #ffc683;
@@ -313,13 +313,13 @@ a.page_link:active {
 
 .project_title {
   color: #00adb5;
-  font-size: clamp(18px, calc(12px + 0.5vw), 999px);
+  font-size: clamp(16px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
 }
 
 .project_info,
 .project_tool_info {
-  font-size: clamp(16px, calc(12px + .4vw), 999px);
+  font-size: clamp(14.5px, calc(12px + .4vw), 999px);
   font-weight: 300;
   line-height: 1.6;
 }
