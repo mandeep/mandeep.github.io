@@ -36,11 +36,11 @@
                 <p>
                     I recently had to set up a new Windows 11 environment and decided to document the steps needed to install Zsh since I will inevitably forget the next time this happens:
                     <ol class="list">
-                        <li>Install <a href="https://git-scm.com/install/windows" class="page_link">git bash</a> and note the installation directory (C:/Program Files/Git).</li>
-                        <li>Download <a href="https://packages.msys2.org/packages/zsh" class="page_link">zsh</a> and extract the etc/ and usr/ directories into the installed git directory.
+                        <li>Install <a href="https://git-scm.com/install/windows" class="page_link">git bash</a> and note the installation directory <pre class="inline_code"><code>(C:/Program Files/Git).</code></pre></li>
+                        <li>Download <a href="https://packages.msys2.org/packages/zsh" class="page_link">zsh</a> and extract the <pre class="inline_code"><code>etc/</code></pre> and <pre class="inline_code"><code>usr/</code></pre> directories into the installed <pre class="inline_code"><code>Git</code></pre> directory.
                         <i class="note">
-                        Note: Windows 11 supports Zstandard decompression so there's no longer the need to use other archive software.</i></li>
-                        <li>Add the following to .bashrc in the user home directory:
+                        Note: Windows 11 supports Zstandard decompression so there's no longer a need to use other archive software.</i></li>
+                        <li>Add the following to <pre class="inline_code"><code>.bashrc</code></pre> in the user home directory:
 <pre>
     <code class="code_block">if [ -t 1 ]; then
     exec zsh
