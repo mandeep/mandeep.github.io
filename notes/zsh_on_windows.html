@@ -34,14 +34,12 @@
             <div class="blog_post_date">August 09, 2026</div>
             <div class="blog_post_content">
                 <p>
-                    I recently had to set up a new Windows 11 environment and decided to document the steps needed to install Zsh on Windows 11:
-                    <ol>
-                        <li>Install git bash via <a href="https://git-scm.com/install/windows" class="page_link">git-scm</a> and note the installation directory (C:/Program Files/Git).</li>
-                        <br>
-                        <li>Download zsh from the <a href="https://packages.msys2.org/packages/zsh" class="page_link">msys2 package repository</a> and extract the etc/ and usr/ directories into the installed git directory.
-                        <br><br><i>
+                    I recently had to set up a new Windows 11 environment and decided to document the steps needed to install Zsh since I will inevitably forget the next time this happens:
+                    <ol class="list">
+                        <li>Install <a href="https://git-scm.com/install/windows" class="page_link">git bash</a> and note the installation directory (C:/Program Files/Git).</li>
+                        <li>Download <a href="https://packages.msys2.org/packages/zsh" class="page_link">zsh</a> and extract the etc/ and usr/ directories into the installed git directory.
+                        <i class="note">
                         Note: Windows 11 supports Zstandard decompress so there's no longer the need to use other archive software.</i></li>
-                        <br>
                         <li>Add the following to .bashrc in the user home directory:
 <pre>
     <code class="code_block">if [ -t 1 ]; then
@@ -49,19 +47,18 @@
 fi</code>
 </pre>
                         </li>
+                    </ol>
+                    Optional:
+                    <div class="list">
+                        <ul>
                         <li>
                         Install <a href="https://ohmyz.sh/#install" class="page_link">oh-my-zsh</a>.
                         </li>
-                    </ol>
-                    Optional:
-                    <br>
-                    <div class="list">
-                        <ul>
-                        <li>Install <a href="https://github.com/microsoft/terminal" class="page_link">Windows Terminal Preview</a> and set it as the default terminal in Terminal settings.</li>
-                        <br>
+                        <li>Install <a href="https://github.com/microsoft/terminal" class="page_link">Windows Terminal Preview</a> and set it as the default terminal in its settings with git bash as the default profile.</li>
                         <li>Install the <a href="https://github.com/microsoft/cascadia-code" class="page_link">Cascadia Code</a> font that includes a native Nerd Font so that all fonts in Zsh themes like Powerline10k show correctly.</li>
                         </ul>
                     </div>
+                That's it! Installng Zsh on Windows 11 is a relatively straighforward process compared to previous versions of Windows.
                 </p>
             </div>
         </div>
