@@ -25,15 +25,25 @@ pre {
   ul {
     color: #d3d9e1;
     list-style-type: disc;
-  }​
+  }
 
   li {
     color: #d3d9e1;
     padding-left: 0;
+    margin-bottom: 1.5em;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 
   li::marker {
     color: #d3d9e1;
+  }
+
+  .note {
+    display: block;
+    margin-top: 0.75em;
   }
 }
 
