@@ -20,7 +20,7 @@
             <div class="menu_container">
                 <div class="subtitle" id="subheader"><a href="../">Code + Design</a></div>
                 <div class="links_menu" id="menu">
-                    <a href="../blog">Blog</a> | 
+                    <a href="../blog">Blog</a> |
                     <a href="../notes">Notes</a> |
                     <a href="../projects">Projects</a>
                 </div>
@@ -36,10 +36,10 @@
                 In February 2024, I released an obstacle course game (obby) called <a href="https://www.roblox.com/games/16198558486/Chill-But-Not-Too-Chill-Obby" class="page_link">Chill But Not Too Chill Obby</a> on Roblox. The Roblox platform allows game developers to publish their own games built with the Roblox game engine (think: Netflix for games). Because Roblox handles many of the minute details of multiplayer game development, it's a great platform to learn game development on. For new Roblox developers, creating an obby as a first game seems to be a rite of passage, and my journey was no different.
 
                 What I thought would take only a week or two turned into a whole month-long adventure, with weekly updates from there on. My original draft was just a basic obby with routine obstacles. However, as I started working on the levels, I felt the urge to design unique and challenging obstacles. I wanted to create something I could be proud of, not just something that looked like the result of a homework exercise.
-                
+
                 Before diving into the game, I played more obbies on Roblox than I care to admit, trying to figure out what hooked players. I noticed a few things that these games had in common: an open-world environment, easy transitions from one level to the next, and simple object models. I decided to incorporate and expand upon these elements in my game to give players a sense of familiarity.
-            
-            </p>                                
+
+            </p>
                 <a href="../images/roblox/screen1.png"><img src="../images/roblox/screen1.png"/></a><div class="caption">View from checkpoint of rotating blocks obstacles and falling rocks obstacles</div>
                 <a href="../images/roblox/screen2.png"><img src="../images/roblox/screen2.png"/></a><div class="caption">Swinging platform obstacles with other obstacles in the distance</div>
                 <a href="../images/roblox/screen3.png"><img src="../images/roblox/screen3.png"/></a><div class="caption">Saw blade obstacles one must pass before reaching the jetpack levels</div>
@@ -70,7 +70,7 @@ for _, part in collection_service:GetTagged("BlockPart") do
 end</code>
 </pre>
                 <p>While this did make the level easier, it didn’t make it any less of a slog. It wasn’t until much later, when I was modifying another level, that I realized the fix for level 3 was to make the blocks smaller so they could be jumped over. The key level design element I discovered here is that players should not have to wait for obstacles to progress through the level. With the obstacles now hurdleable, I was able to accelerate the transition from the start and end positions.
-                    
+
                 </p>
 
                     <video src="../images/roblox/level3.mp4" controls preload>Video of Level 3</video><div class="caption">Slower obstacles, but now the player has to wait for them to move</div>
@@ -80,11 +80,11 @@ end</code>
                 </p>
                 <video src="../images/roblox/level13.mp4" controls preload>Video of Level 13</video><div class="caption">Imagine twice as many fireballs, and the player still has to wait on the obstacles</div>
                  <p>   Level 20 appears to be easy, but I found that players couldn’t time the jump between stars correctly. This level has been tweaked so many times that I think it’s just not suitable for multiplayer gameplay, where player or server lag can cause issues. Perhaps some single-player obstacles just don't translate well to multiplayer!
-                    
+
                 </p>
                     <video src="../images/roblox/level20.mp4" controls preload>Video of Level 20</video><div class="caption">Players failing to jump across the rotating stars</div>
-                    
-                    <p>While these three levels gave players headaches and will probably need continuous tweaks until the balance is right, there were other levels that players seemed to enjoy or find challenging in a good way.                    
+
+                    <p>While these three levels gave players headaches and will probably need continuous tweaks until the balance is right, there were other levels that players seemed to enjoy or find challenging in a good way.
 
                 </p>
 
@@ -108,15 +108,12 @@ While I won’t stop developing the game, updates will continue to be sporadic. 
 <div class="list">
 <ul>
 <li>I did not have anyone playtest the game prior to advertising. This meant I discovered the game was too difficult during an advertising window with live players, which is not ideal. Going forward, I will playtest, even if it means making my friends sign up for a specific platform.</li>
-<br>
 <li>I thought that creating unique and challenging obstacles would draw in new players and keep old players returning. This was not the case. In the end, my game was still an obstacle course with nothing noteworthy differentiating it from the competition.</li>
-<br>
 <li>It’s better to spend more time on a game to ensure everything is feature complete, rather than releasing something sooner and iterating on it over time. This element differentiates the work of Technical Artists and Software Engineers, and it seems to apply to games as well. The one caveat may be when you need to be first to market to capitalize on something new to the platform you’re working on.</li>
-<br>
 <li>The <a href="https://devforum.roblox.com/" class="page_link">Roblox Developer Forum</a> is a goldmine of information. I cannot overstate how awesome the developers on that forum are for assisting others and for writing amazing content.</li>
 </ul>
 </div>
-<p>Although I’m currently focusing solely on Fortnite Creative, I still have some ideas I want to bring to fruition on Roblox later this year. While things didn't go as planned with the release of this game, I learned so much and I'm excited to apply those lessons to future projects. 
+<p>Although I’m currently focusing solely on Fortnite Creative, I still have some ideas I want to bring to fruition on Roblox later this year. While things didn't go as planned with the release of this game, I learned so much and I'm excited to apply those lessons to future projects.
 
 Thanks for reading, and please <a href="../index#contact" class="page_link">reach out</a> if you have any comments about this post. I always appreciate feedback and look forward to sharing more updates with you soon!
 
