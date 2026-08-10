@@ -20,8 +20,8 @@
             <div class="menu_container">
                 <div class="subtitle" id="subheader"><a href="/">Code + Design</a></div>
                 <div class="links_menu" id="menu">
-                    <a href="blog">Blog</a> | 
-                    <a href="notes">Notes</a> | 
+                    <a href="blog">Blog</a> |
+                    <a href="notes">Notes</a> |
                     <a href="projects">Projects</a>
                 </div>
             </div>
@@ -29,7 +29,12 @@
         </div>
 
         <div class="project_container">
-            <div class="blog_year">2025</div>
+            <div class="blog_year">2026</div>
+
+            <div class="blog_layout">
+                <div class="blog_landing_title"><a href="notes/zsh_on_windows" class="page_link">Installing Zsh on Windows 11</a></div>
+                <div class="blog_landing_date">August 9, 2026</div>
+            </div>
             <!-- <div class="blog_layout">
                 <div class="blog_landing_title">Generating Obstacle Colors</div>
                 <div class="blog_landing_date">August 9, 2024</div>
@@ -46,7 +51,7 @@ local obstacles = obstacles_folder:GetChildren()
 table.sort(obstacles, function(a,b) return a.Position.Y < b.Position.Y end)
 
 for i, obstacle in obstacles do
-    obstacle.Color = Color3.fromHSV(i / #obstacles, 0.3, 1)	
+    obstacle.Color = Color3.fromHSV(i / #obstacles, 0.3, 1)
 end
                 </code>
             </pre>
