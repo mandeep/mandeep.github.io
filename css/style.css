@@ -24,6 +24,7 @@ pre {
 .list {
   ul {
     color: #d3d9e1;
+    list-style-type: disc;
   }​
 
   li {
@@ -58,7 +59,7 @@ pre {
 
 img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: contain;
 }
 
@@ -207,7 +208,7 @@ a.page_link:active {
     padding: 0;
   }
 
-  .caption { 
+  .caption {
     width: 100%;
     padding: var(--lx-space-01);
     top: 0;
@@ -368,7 +369,7 @@ a.page_link:active {
     grid-template-columns: auto;
     grid-template-areas:
       "post_date"
-      "post_name"; 
+      "post_name";
   }
 
   .blog_landing_title {

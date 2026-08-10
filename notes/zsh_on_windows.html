@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="apple-touch-icon" href="../favicon.png"/>
+        <link rel="icon" type="image/png" href="../favicon.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico?"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.css">
+        <title>Mandeep Bhutani</title>
+    </head>
+    <body>
+        <div class="titlebar">
+          <div class="title_container">
+            <div class="title" id="header"><a href="../">Mandeep Bhutani</a></div>
+            <div class="menu_container">
+                <div class="subtitle" id="subheader"><a href="../">Code + Design</a></div>
+                <div class="links_menu" id="menu">
+                    <a href="../blog">Blog</a> |
+                    <a href="../notes">Notes</a> |
+                    <a href="../projects">Projects</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="blog_container">
+            <div class="blog_post_title">Installing Zsh on Windows 11</div>
+            <div class="blog_post_date">August 09, 2026</div>
+            <div class="blog_post_content">
+                <p>
+                    I recently had to set up a new Windows 11 environment and decided to document the steps needed to install Zsh on Windows 11:
+                    <ol>
+                        <li>Install git bash via <a href="https://git-scm.com/install/windows" class="page_link">git-scm</a> and note the installation directory (C:/Program Files/Git).</li>
+                        <br>
+                        <li>Download zsh from the <a href="https://packages.msys2.org/packages/zsh" class="page_link">msys2 package repository</a> and extract the etc/ and usr/ directories into the installed git directory.
+                        <br><br><i>
+                        Note: Windows 11 now supports Zstandard decompress so there's no longer the need to use other archive software.</i></li>
+                        <br>
+                        <li>Add the following to .bashrc in the user home directory:
+<pre>
+    <code class="code_block">if [ -t 1 ]; then
+    exec zsh
+fi</code>
+</pre>
+                        </li>
+                        <li>
+                        Install <a href="https://ohmyz.sh/#install" class="page_link">oh-my-zsh</a>.
+                        </li>
+                    </ol>
+                    Optional:
+                    <br>
+                    <div class="list">
+                        <ul>
+                        <li>Install <a href="https://github.com/microsoft/terminal" class="page_link">Windows Terminal Preview</a> and set it as the default terminal in Terminal settings.</li>
+                        <br>
+                        <li>Install the <a href="https://github.com/microsoft/cascadia-code" class="page_link">Cascadia Code</a> font that includes a native Nerd Font so that all fonts in Zsh themes like Powerline10k show correctly.</li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
