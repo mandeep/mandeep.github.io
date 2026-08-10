@@ -20,6 +20,15 @@ pre {
   white-space: pre-wrap;
 }
 
+.inline_code,
+.inline_code .hljs {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  white-space: normal;
+}
+
 
 .list {
   ul {
