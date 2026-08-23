@@ -6,6 +6,9 @@ html, body {
   background: #222831;
 }
 
+body {
+  padding-bottom: 4em;
+}
 
 p {
   white-space: pre-line;
@@ -282,6 +285,25 @@ a.page_link:active {
   padding-top: 1.2vh;
 }
 
+.note_landing_title {
+  border: 1px solid transparent;
+  border-right-color: #aaa;
+  padding-right: 2vh;
+  font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
+  font-weight: 300;
+  grid-area: post_name;
+  color: #ffc683;
+}
+
+.note_landing_date {
+  padding-left: 2vh;
+  font-size: clamp(13px, calc(12px + 0.35vw), 999px);
+  font-weight: 300;
+  grid-area: post_date;
+  color: #d3d9e1;
+  padding-top: 1.2vh;
+}
+
 .blog_post_title {
   font-size: clamp(14.5px, calc(12px + 0.5vw), 999px);
   font-weight: 300;
@@ -391,12 +413,14 @@ a.page_link:active {
       "post_name";
   }
 
-  .blog_landing_title {
+  .blog_landing_title,
+  .note_landing_title {
     border: 0;
     padding-right: 0;
   }
 
-  .blog_landing_date {
+  .blog_landing_date,
+  .note_landing_date {
     padding-left: 0;
   }
 }
